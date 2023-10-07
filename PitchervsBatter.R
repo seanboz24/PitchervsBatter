@@ -19,7 +19,7 @@ chadwick <- baseballr::chadwick_player_lu() %>%
         mutate(Name = paste(name_first,name_last)) %>%
         dplyr::filter(mlb_played_last == 2023)
 
-game_pks <- baseballr::mlb_game_pks("2023-10-04") %>%
+game_pks <- baseballr::mlb_game_pks(Sys.Date()) %>%
         dplyr::select(game_pk,away_team=teams.away.team.name,
                       home_team=teams.home.team.name,field=venue.name)
 
