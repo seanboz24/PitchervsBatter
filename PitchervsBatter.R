@@ -131,8 +131,6 @@ matchup_model <- function(batter,pitcher,n_sims) {
 # Define UI for application that draws a histogram
 ui <- fluidPage(
         
-        # includeCSS("styles.css"),  # Include your custom CSS file
-        
         includeCSS("Styles.css"),  # Include your custom CSS file
 
         # Application title
